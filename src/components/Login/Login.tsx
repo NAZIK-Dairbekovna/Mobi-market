@@ -11,7 +11,7 @@ function Login() {
                 />
                 <form action=""
                       aria-placeholder={'Имя пользователя'}
-                      className=""
+                      className="w-22 h-20 mt-60 ml-40 text-gray-500 border-b-blue-600"
                 >
                     Имя пользователя
                 </form>
