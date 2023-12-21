@@ -17,7 +17,7 @@ const SignUp = () => {
                         Имя пользователя
                     </form>
                     <form action=""
-                          aria-placeholder={'Почта'}
+                          aria-placeholder={''}
                           className=" text-gray-500 border-b-blue-600"
                     >
                         Почта
