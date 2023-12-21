@@ -1,8 +1,8 @@
 import React from 'react';
-import login from '../img/image 1.jpg'
+import login from "../img/image 1.jpg";
 
-function Login() {
-        return (
+const SignUp = () => {
+    return (
         <>
             <div className='flex justify-items-stretch'>
                 <img src={login}
@@ -10,30 +10,27 @@ function Login() {
                      alt=""
                 />
                 <div className='w-22 h-20 mt-60 ml-40'>
-                    <form action=""
+                    <form action="text-table"
                           aria-placeholder={'Имя пользователя'}
                           className=" text-gray-500 border-b-blue-600"
                     >
                         Имя пользователя
                     </form>
                     <form action=""
-                          aria-placeholder={'Пароль'}
+                          aria-placeholder={'Почта'}
                           className=" text-gray-500 border-b-blue-600"
                     >
-                        Пароль
+                        Почта
                     </form>
                     <div className='flex flex-col'>
-                        <button className='flex self-start text-blue-800'>
-                            Забыли пароль
-                        </button>
                         <button className='bg-gray-300 text-white font-bold rounded-2xl'>
-                            Войти
+                            Далее
                         </button>
                     </div>
                 </div>
             </div>
         </>
     );
-}
+};
 
-export default Login;
+export default SignUp;
