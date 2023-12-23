@@ -23,7 +23,7 @@ const SignUp = () => {
                         Почта
                     </form>
                     <div className='flex flex-col'>
-                        <button className='bg-gray-300 text-white font-bold rounded-2xl'>
+                        <button className='w-full bg-gray-300 text-white font-bold rounded-2xl'>
                             Далее
                         </button>
                     </div>

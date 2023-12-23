@@ -12,7 +12,7 @@ function Login() {
                 <div className='w-22 h-20 mt-60 ml-40'>
                     <form action=""
                           aria-placeholder={'Имя пользователя'}
-                          className=" text-gray-500 border-b-blue-600"
+                          className=" text-gray-400 border-b-blue-600"
                     >
                         Имя пользователя
                     </form>
