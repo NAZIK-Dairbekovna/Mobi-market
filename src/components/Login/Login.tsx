@@ -6,10 +6,10 @@ function Login() {
         <>
             <div className='flex justify-items-stretch'>
                 <img src={login}
-                     style={{width: "650px", height: "580px"}}
+                     style={{width: "550px", height: "590px"}}
                      alt=""
                 />
-                <div className='w-22 h-20 mt-60 ml-40'>
+                <div className='w-22 h-20 mt-60 ml-60'>
                     <form action=""
                           aria-placeholder={'Имя пользователя'}
                           className=" text-gray-400 border-b-blue-600"
