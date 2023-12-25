@@ -19,6 +19,7 @@ function Login() {
                     <form action=""
                           aria-placeholder={'Пароль'}
                           className=" text-gray-500 border-b-blue-600"
+                          aria-label={'password'}
                     >
                         Пароль
                     </form>
