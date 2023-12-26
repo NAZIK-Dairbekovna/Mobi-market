@@ -1,33 +1,56 @@
-import React from 'react';
-import login from '../img/image 1.jpg'
+import React, {FormEvent, useState} from 'react';
+import banner from '../img/image 1.jpg'
+import {loginUser} from "../../store/auth/actionCreators";
+import {useAppDispatch} from "../../store";
 
 function Login() {
+    const dispatch = useAppDispatch();
+
+    const [login, setLogin] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault();
+
+        dispatch(loginUser({ login, password }));
+    };
+
         return (
         <>
-            <div className='flex justify-items-stretch'>
-                <img src={login}
+            <div className='flex justify-items-center'>
+                <img src={banner}
                      style={{width: "550px", height: "590px"}}
-                     alt=""
+                     alt="banner"
                 />
-                <div className='w-22 h-20 mt-60 ml-60'>
-                    <form action=""
-                          aria-placeholder={'Имя пользователя'}
-                          className=" text-gray-400 border-b-blue-600"
-                    >
-                        Имя пользователя
+                <div className='w-200 h-50 mt-60 ml-60'>
+                    <form
+                          onSubmit={handleSubmit}>
+                        <div>
+                            <label htmlFor="login"></label>
+                            <input
+                                type="text"
+                                name='login'
+                                value={login}
+                                placeholder='Имя пользователя'
+                                onChange={(e) => setLogin(e.target.value)}
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="password"></label>
+                            <input
+                                type="password"
+                                name='password'
+                                value={password}
+                                placeholder='Пароль'
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </div>
                     </form>
-                    <form action=""
-                          aria-placeholder={'Пароль'}
-                          className=" text-gray-500 border-b-blue-600"
-                          aria-label={'password'}
-                    >
-                        Пароль
-                    </form>
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col w-full'>
                         <button className='flex self-start text-blue-800'>
                             Забыли пароль
                         </button>
-                        <button className='bg-gray-300 text-white font-bold rounded-2xl'>
+                        <button className='bg-gray-300 w-full h-8 text-white font-bold rounded-2xl'>
                             Войти
                         </button>
                     </div>
