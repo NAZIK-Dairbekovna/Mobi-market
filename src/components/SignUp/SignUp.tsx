@@ -1,11 +1,11 @@
 import React from 'react';
-import login from "../img/image 1.jpg";
+import banner from "../img/image 1.jpg";
 
 const SignUp = () => {
     return (
         <>
             <div className='flex justify-items-stretch'>
-                <img src={login}
+                <img src={banner}
                      style={{width: "550px", height: "590px"}}
                      alt=""
                 />
